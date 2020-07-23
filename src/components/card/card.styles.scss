@@ -1,0 +1,88 @@
+.card{
+    height: 350px;
+    box-shadow: 0 8px 6px -6px black;
+    // border: solid grey 2px ;
+    border-radius: 0 0 20px 20px;
+    margin: 50px 10px;
+    border: solid transparent 1px;
+    .task-img{
+        width: 300px;
+        height: 200px;
+    }
+    .details{
+        height: 120px;
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+    }
+    &:hover{
+        border: solid black 1px;
+    }
+ 
+}
+.student-card{
+    margin: 30px auto;
+    width: 900px;
+    height: 750px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 8px 6px -6px black;
+    .student-img{
+        width: 900px;
+        height: 500px;
+    }
+    .details{
+        padding: 20px 40%;
+        h3{
+            padding-bottom: 5px;
+        }
+        .score{
+            margin-top: 20px;
+        }
+        .score-sub{
+            .group{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .submit-button{
+            padding: 5px 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 899px){
+  .card{
+      width: 250px;
+      .task-img{
+          width: 250px;
+
+    }
+  }
+  .student-card{
+      width: 300px;
+      height: 350px;
+      .student-img{
+        width: 300px;
+        height: 150px;
+    }
+    .details{
+        padding: 10px 10%;
+        .score-sub{
+            .group{
+                .form-input{
+                    // width: 60%;
+                    // margin: 0 auto;
+                    // font-size: 1rem;
+                }
+            }
+        }
+    }
+  }
+ 
+   
+}

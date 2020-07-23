@@ -1,0 +1,26 @@
+.taskContainer{
+    // width: 50%;
+    text-align: center;
+    padding: 50px 70px;
+    background: linear-gradient(to left,#FC7E23,#FC5B27);
+    color: white;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 20px;
+   cursor: pointer;
+   border: solid transparent 2px;
+   &:hover{
+       border: solid #fff 2px;
+   }
+   & .title{
+       font-weight: 100;
+       padding: 0 0 20px 0;
+   }
+
+}
+@media only screen and (max-width: 899px){
+    .taskContainer{
+        padding: 0;
+        width: 250px;
+        height: 150px;
+    }
+}
